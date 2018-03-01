@@ -20,7 +20,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <MapView
-          style={{ alignSelf: 'stretch', height: 200 }}
+          style={{ alignSelf: 'stretch', height: 800 }}
           region={this.state.mapRegion}
           onRegionChange={this._handleMapRegionChange}
         />
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     backgroundColor: 'transparent',
   },
 });
